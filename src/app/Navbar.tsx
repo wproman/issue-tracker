@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiFillBug } from "react-icons/ai";
 import classname from "classnames";
 import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const currentpath = usePathname();
@@ -32,6 +33,7 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
+      <Button variant="destructive">Click me</Button>
     </nav>
   );
 };
